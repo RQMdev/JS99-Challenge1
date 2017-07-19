@@ -1,0 +1,73 @@
+html {
+  padding: 0;
+  margin: 0;
+  color: #fff;
+}
+
+body {
+  margin: 20px;
+  height: 100vh;
+  /*overflow: hidden;*/
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(4, 1fr);
+  grid-gap: 40px;
+  font-family: sans-serif;
+  font-size: 1.7em;
+}
+
+div {
+  -webkit-box-shadow: 0 20px 12px -8px rgba(0,0,0,.3);
+	   -moz-box-shadow: 0 20px 12px -8px rgba(0,0,0,.3);
+	        box-shadow: 0 20px 12px -8px rgba(0,0,0,.3);
+}
+
+div span {
+  position: relative;
+  float: left;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -webkit-touch-callout: none; /* iOS Safari */
+    -webkit-user-select: none; /* Safari */
+     -khtml-user-select: none; /* Konqueror HTML */
+       -moz-user-select: none; /* Firefox */
+        -ms-user-select: none; /* Internet Explorer/Edge */
+            user-select: none; /* Non-prefixed version, currently
+                                  supported by Chrome and Opera */
+}
+
+
+#display {
+  grid-column: 1 / -1;
+  grid-row: 1;
+  background: #d9b68a;
+}
+
+#display span {
+  font-size: 4em;
+}
+
+#button {
+  grid-column: 1;
+  grid-row: 2 / -1;
+  background: #ebcd86;
+}
+
+#multiply {
+  grid-column: 2;
+  grid-row: 2;
+  background: #c6a48c;
+}
+
+#autoclicker {
+  grid-column: 2;
+  grid-row: 3;
+  background: #b4968b;
+}
+
+#bonus {
+  grid-column: 2;
+  grid-row: 4;
+  background: #a28a87;
+}
